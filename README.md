@@ -25,3 +25,7 @@ $ md5sum lr.c decrypted
 1fbb70eb23c0d60a96ba0a7319002247  decrypted
 $
 ```
+
+## Dependencies
+
+Known to work with libsodium 1.0.11.
