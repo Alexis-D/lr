@@ -120,6 +120,7 @@ int lr_encrypt(char *file) {
 
     // encryption!
     unsigned char nonce[crypto_aead_aes256gcm_NPUBBYTES];
+    randombytes_buf(nonce, sizeof nonce);
     unsigned char *ciphertext = sodium_allocarray(st.st_size + crypto_aead_aes256gcm_ABYTES, sizeof (unsigned char));
     unsigned long long ciphertext_len;
 

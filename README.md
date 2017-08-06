@@ -8,7 +8,8 @@ shouldn't implement its own crypto. Despite being a very simple utility that
 only supports encryption/decryption it still is ~300LOC given all the
 error-handling. That's a lot of room for coding mistakes that would render
 secrets, well, not so secret. As a result you shouldn't be using this to store
-your secrets.
+your secrets (see <https://github.com/Alexis-D/lr/issues/1> for at least one
+way in which the code in this repo was broken).
 
 ## Building/usage
 
